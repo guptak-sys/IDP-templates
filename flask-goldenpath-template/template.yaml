@@ -50,7 +50,7 @@ spec:
           description: ${{ parameters.description }}
           destination:
             repo: ${{ parameters.repo }}
-            owner: ramannkhanna2
+            owner: guptak-sys
 
     - id: wait
       name: Wait for GitHub to index repo
