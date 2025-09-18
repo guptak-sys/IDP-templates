@@ -79,7 +79,7 @@ jobs:
         run: docker build -t ${{ values.name }} .
 
       - name: Run Container
-        run: docker run -d -p 5000:5000 --name ${{ values.name }} {{ values.name }}
+        run: docker run -d -p 5000:5000 --name ${{ values.name }} ${{ values.name }}
 
       - name: Wait for App
         run: |
